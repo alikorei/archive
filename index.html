@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link rel="stylesheet" href="assets/css/records.css">
+    <link rel="stylesheet" href="assets/css/model.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Agence</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Agence de voyage</h1>
+
+    </header>
+    <main>
+        <button class="button blue mobile" id="idStudent">Nouveau client</button>
+        <table id="tblStudent" class="records">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td> Nom complet</td>
+                    <td>Adresse e-mail</td>
+                    <td>Téléphone</td>
+                    <td>Heure de départ</td>
+                    <td>Ville de départ-arrivée</td>
+                    <td>Date de réservation</td>
+                    <td>Mode de paiement</td>
+                    <td>ACTIONS</td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <!-- <div class="model active" id="model"> -->
+        <div class="model" id="model">
+            <div class="model-content">
+                <header class="model-header">
+                    <h2>Créer nouvelle réservation</h2>
+                    <span class="model-close" id="modelClose">&#10006;</span>
+                </header>
+                <form id="form" class="model-form">
+                    <input type="text" class="model-field" id="ID" data-index="new" placeholder="ID du client" required>
+                    <input type="text" class="model-field" id="Nom_complet" placeholder="Nom du client" required>
+                    <input type="email" class="model-field" id="Addresse_Email" placeholder="Adresse e-mail du client" required>
+                    <input type="tel" class="model-field" id="Tel" placeholder="Téléphone du client" required>
+                    <input type="text" class="model-field" id="Heure_de_depart" placeholder="Heure de départ du client" required>
+                    <input type="text" class="model-field" id="Villes_de_depart_arrivee" placeholder="Ville de départ-arrivée du client" required>
+                    <input type="date" class="model-field" id="Date_de_reservation" placeholder="Date de réservation du client" required>
+                    <input type="text" class="model-field" id="Mode_de_paiement" placeholder="Mode de paiement du client" required>
+                </form>
+                <footer class="model-footer">
+                    <button class="button green" id="save">Sauvegarder</button>
+                    <button class="button blue" id="cancel">Annuler</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy; Tech4Tchad Corp 2022 <br> Tech4Tchad Group 1<br> Full Stack Web Development<br> Phone: +235 63 64 49 34<br> ghislainndjimrabaye@gmail.com
+        <br>
+    </footer>
+</body>
+
+</html>
